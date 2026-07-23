@@ -1,53 +1,103 @@
 # LedgerBase
 
-Welcome to **LedgerBase** — a foundation for building reliable, transparent, and scalable financial or ledger-driven systems.
+**Traceable financial fundamentals for developers and AI systems.**
 
-## What is LedgerBase?
+LedgerBase provides normalized company financial data derived from SEC filings, with source lineage attached to every reported metric.
 
-LedgerBase is focused on creating tools, services, and infrastructure for systems where correctness, traceability, and consistency matter.  
-Whether you're working with transaction processing, accounting workflows, audit trails, or financial data platforms, LedgerBase aims to provide a solid base to build on.
+Instead of returning unexplained numbers, LedgerBase helps developers understand:
 
-## What we care about
+* What the metric represents
+* Which SEC filing it came from
+* Which XBRL concept was used
+* What reporting period it covers
+* Whether the value is available, missing, or ambiguous
 
-- **Reliability** — systems should behave predictably and safely
-- **Transparency** — data flows and changes should be easy to understand
-- **Scalability** — architecture should support growth over time
-- **Maintainability** — codebases should remain clean and adaptable
-- **Developer experience** — great tooling makes great teams faster
+## What LedgerBase provides
+
+LedgerBase turns public SEC filing data into consistent, developer-friendly financial fundamentals.
+
+Current capabilities include:
+
+* Company financial metrics
+* Income statement, balance sheet, and cash-flow data
+* Historical metric values
+* Filing and reporting-period metadata
+* XBRL fact normalization
+* Metric-to-source lineage
+* Explicit missing and ambiguous data states
+* API documentation and integration examples
+
+## Why LedgerBase exists
+
+Public financial data is available, but using it reliably is difficult.
+
+The same financial concept may be reported under different XBRL tags, periods, units, and filing contexts. Many financial APIs return a normalized number without explaining how that number was produced.
+
+LedgerBase is being built around a different principle:
+
+> A financial metric should not be trusted unless its origin can be inspected.
+
+Every supported value should be traceable back to its underlying filing and source fact.
+
+## Built for
+
+LedgerBase is intended for developers building:
+
+* Financial analysis tools
+* Company research applications
+* Fundamental-data dashboards
+* Screening and comparison products
+* AI agents working with financial statements
+* Internal financial-data pipelines
+* Educational and experimental finance projects
+
+## Core principles
+
+* **Traceability** — every metric should retain its source lineage
+* **Correctness** — ambiguous data should not be silently guessed
+* **Consistency** — financial concepts should have stable application-level definitions
+* **Transparency** — missing, derived, and normalized values should be distinguishable
+* **Developer experience** — APIs and documentation should be straightforward to use
 
 ## Repositories
 
-This organization contains the code, shared libraries, internal tooling, and supporting resources that power the LedgerBase ecosystem.
+The LedgerBase organization contains the components used to build and operate the platform:
 
-Depending on the repository, you may find:
+* Backend API services
+* SEC filing and XBRL ingestion pipelines
+* Product documentation
+* Landing page and developer resources
+* Infrastructure and deployment configuration
+* Examples and future SDK integrations
 
-- Core platform services
-- Shared packages and utilities
-- Infrastructure and deployment configuration
-- Documentation and developer guides
-- Experimental or early-stage initiatives
+Repository availability may vary while the platform is under active development.
 
-## Contributing
+## Project status
 
-We welcome collaboration and continuous improvement.
+LedgerBase is currently under active development and validation.
 
-If you'd like to contribute:
+The API contract, supported companies, financial metrics, ingestion pipeline, and developer experience are being expanded incrementally. Interfaces may evolve as data-quality assumptions are tested against additional filings and issuers.
 
-1. Explore the repositories in this organization
-2. Read each repository’s documentation and contribution guidelines
-3. Open an issue to discuss bugs, ideas, or enhancements
-4. Submit a pull request with a clear description of your changes
+## Contributing and feedback
 
-## Useful resources
+Feedback from developers, financial-data users, and open-source contributors is welcome.
 
-- Check each repository’s README for setup and usage instructions
-- Review issues and pull requests for ongoing work
-- Look for project-specific documentation where available
+You can:
 
-## Our goal
+1. Review the available repositories and documentation
+2. Report incorrect or unclear financial data
+3. Request companies, metrics, or API capabilities
+4. Open an issue before proposing substantial changes
+5. Submit focused pull requests with appropriate tests and documentation
 
-Our goal is to build dependable systems and reusable foundations that help teams move faster without compromising accuracy and trust.
+## Resources
+
+* Explore the repositories below
+* Read each repository’s README for setup instructions
+* Review the API documentation and examples
+* Use GitHub Issues for bugs and feature requests
+* Use GitHub Discussions for questions and product feedback
 
 ---
 
-**LedgerBase** — building strong foundations for dependable systems.
+**LedgerBase — financial data you can trace back to the source.**
