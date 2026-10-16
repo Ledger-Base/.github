@@ -1,0 +1,40 @@
+name: Feature / story
+description: New behaviour that comes from a spec in Notion.
+title: "[Feature] "
+labels: ["type: feature"]
+body:
+  - type: input
+    id: spec
+    attributes:
+      label: Spec (Notion)
+      description: Link to the Notion spec or plan this work comes from. Every feature needs one.
+      placeholder: https://app.notion.com/p/...
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What changes for the user or the system when this is done. One or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkable conditions. The issue is Done only when all are true.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Out of scope
+      description: What this issue deliberately does not cover.
+  - type: input
+    id: plan
+    attributes:
+      label: Notion plan issue (optional)
+      description: Link to the Notion Issues row that schedules this work (LB or EMB block), if any.
